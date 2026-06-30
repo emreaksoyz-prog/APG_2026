@@ -1,4 +1,102 @@
-<ul>
-    <li><a href="GİD_URT_APG_MAYIS_2026.html">Non-Steril</a></li>
-    <li><a href="GİD_URT_APG_MAYIS_2026_STERİL.html">Nebül</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilim İlaç APG Portalı</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f4f6f9;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+/* Filigran */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background-image:url("bilim_logo.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:500px;
+
+    opacity:0.06;
+
+    z-index:-1;
+}
+
+.container{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:320px;
+    height:180px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+
+    transition:all 0.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.18);
+}
+
+.title{
+    font-size:30px;
+    font-weight:700;
+    color:#003366;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#666;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a class="card" href="GİD_URT_APG_MAYIS_2026.html">
+        <div class="title">Non-Steril</div>
+        <div class="subtitle">APG Dokümanları</div>
+    </a>
+
+    <a class="card" href="GİD_URT_APG_MAYIS_2026_STERİL.html">
+        <div class="title">Nebül</div>
+        <div class="subtitle">APG Dokümanları</div>
+    </a>
+
+</div>
+
+</body>
+</html>
